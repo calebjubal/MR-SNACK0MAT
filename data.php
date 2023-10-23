@@ -28,8 +28,10 @@ $snacks =[
         ["name" => "Gummy Bears", "description" => "Fruity gummy candies", "price" => 2.50]
     ],
     "Icecream" => [
-        ["name" => "Vanilla", "description" => "Classic vanilla flavor", "price" => 3.50],
-        ["name" => "Chocolate", "description" => "Rich chocolate flavor", "price" => 3.75],
-        ["name" => "Strawberry", "description" => "Creamy strawberry delight", "price" => 3.90]
+        ["name" => "Vanilla icecream cone", "description" => "Classic vanilla flavor", "price" => 3.50],
+        ["name" => "Chocolate icecream cone", "description" => "Rich chocolate flavor", "price" => 3.75],
+        ["name" => "Strawberry icecream cone", "description" => "Creamy strawberry delight", "price" => 3.90]
     ]
 ];
+
+$basket = [];
