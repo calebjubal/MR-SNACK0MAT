@@ -7,7 +7,7 @@ $snacks =[
         ["name" => "Nacho Cheese", "description" => "Cheddar cheese flavor", "price" => 3.00],
         ["name" => "Pita Chips", "description" => "Garlic and herb seasoned", "price" => 3.50]
     ],
-    "Dip" => [
+    "Dips" => [
         ["name" => "Sour Cream and Onion Dip", "description" => "Creamy dip with onions", "price" => 1.75],
         ["name" => "Guacamole", "description" => "Fresh avocado dip", "price" => 2.00],
         ["name" => "Hummus", "description" => "Chickpea-based dip", "price" => 2.25]
@@ -28,10 +28,14 @@ $snacks =[
         ["name" => "Gummy Bears", "description" => "Fruity gummy candies", "price" => 2.50]
     ],
     "Icecream" => [
-        ["name" => "Vanilla icecream cone", "description" => "Classic vanilla flavor", "price" => 3.50],
-        ["name" => "Chocolate icecream cone", "description" => "Rich chocolate flavor", "price" => 3.75],
-        ["name" => "Strawberry icecream cone", "description" => "Creamy strawberry delight", "price" => 3.90]
+        ["name" => "Vanilla icecream", "description" => "Classic vanilla flavor", "price" => 3.50],
+        ["name" => "Chocolate icecream", "description" => "Rich chocolate flavor", "price" => 3.75],
+        ["name" => "Strawberry icecream", "description" => "Creamy strawberry delight", "price" => 3.90]
     ]
 ];
 
-$basket = [];
+$basketimages = [" ",
+"https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1683238741/vendor/6987/catalog/product/2/0/20190801031252_file_5d4258b4d12a4_5d425936285e8.jpeg",
+"https://cdn.atwilltech.com/flowerdatabase/s/salty-snacks-basket-gift-basket-GB00309.425.jpg",
+"https://www.5280gourmet.com/media/catalog/product/cache/2de01939f675665ea08278e4ad5766e2/l/a/large_deluxe_vegan_or_vegetarian_gift_basket._1.png",
+"https://glendenningsbathurst.com/cdn/shop/products/saltysnacksbasket.jpg?v=1667824761"];
