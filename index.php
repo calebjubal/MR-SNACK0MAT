@@ -40,6 +40,39 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["addtobasket"])) {
         </form>
     </div>
     <?php } ?>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["search"])) {
+    $searchQuery = $_POST["search"];
+    $searchQuery = sanitizeName($searchQuery);
+    $searchResults = [];
+
+    // Loopa igenom snacks listan och hitta matchningar.
+    foreach ($snacks as $category => $items) {
+        foreach ($items as $snack) {
+            // Om $searchquery finns i snack-listan så får vi ut positionen av strängen i listan. Den lägger vi sen in i sökresultatslistan.
+            if (stripos($snack["name"], $searchQuery) !== false) {
+                $searchResults[] = $snack;
+            }
+        }
+    } ?> <h3>This is your result!</h3>
+    <div class="searchitemsholder"> <?php
+        foreach ($searchResults as $snack) { ?>
+            <div class="item"> 
+            <h3><?php echo $snack["name"];?></h3>
+            <h3><?php echo $snack["price"]; ?> &#36;</h3>
+            <h4><?php echo $snack["description"]; ?></h4>
+            <img src="https://htmlcolorcodes.com/assets/images/colors/gray-color-solid-background-1920x1080.png">
+            <form action="index.php" method="post">
+                            <input type="hidden" name="value" value="<?php echo $snack["price"]; ?>">
+                            <input type="hidden" name="addtobasket" value="<?php echo $snack["name"]; ?>">
+                        <button type="submit">Add to snackpack</button>
+                        </form>
+            </div><?php
+        }
+    ?></div><?php
+}
+?>
+
 <div class="mixbox">
     <!-- $i är lika med 1 eftersom att jag vill ha nummer som startar med 1 på titeln av varje mix -->
     <?php for ($i = 1; $i < 5; $i++) {
@@ -71,6 +104,12 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["addtobasket"])) {
 </div>
     <div class="itemlist">
         <h1>Select your own mix of snacks!</h1>
+        <div class="searchbardiv">
+            <form method="post" action="index.php">
+                <input type="text" name="search" placeholder="Search snacks...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
         <?php
         foreach ($snacks as $category => $items) {
             ?><div class="category-container">

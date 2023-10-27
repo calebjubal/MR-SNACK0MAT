@@ -35,6 +35,11 @@ nav {
     text-align: center;
 }
 
+nav a {
+    text-decoration: none;
+    color: purple;
+}
+
 nav h1 {
     font-family: 'Nosifer', sans-serif;
     font-size: 20px;
@@ -117,7 +122,7 @@ nav h2 a.magicbutton:hover {
 .itemlist {
     margin-top: 20px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
 }
 
@@ -129,9 +134,50 @@ nav h2 a.magicbutton:hover {
 
 .category-container {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
-    justify-content:flex-start;
+    justify-content:center;
+}
+
+.category-container h2 {
+    width:115px;
+    height:30px;
+}
+
+.category-container .item {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width:200px;
+    border-radius: 15px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.searchitemsholder {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbardiv form input {
+    outline:none;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.searchbardiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
 }
 
 .item {
@@ -141,6 +187,7 @@ nav h2 a.magicbutton:hover {
     margin: 10px;
     text-align: center;
     width:200px;
+    height: 400px;
     border-radius: 15px;
 }
 

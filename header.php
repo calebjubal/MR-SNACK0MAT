@@ -11,7 +11,9 @@
     <script src="script.js"></script>
 </head>
 <nav>
-    <h1> MR SNACK-0-MAT &#127875;</h1>
+    <a href="/index.php">
+        <h1> MR SNACK-0-MAT &#127875;</h1>
+    </a>
     <h2>
         <a href="#">About</a>
         <a href="#">Contact</a>
