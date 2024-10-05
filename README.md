@@ -1,8 +1,9 @@
 # MR-SNACK0MAT 
 
-## This is one of my first projects made using php when i started web developement. Feel free to download :)
+## This is one of my first projects made using php when i started web developement. Feel free to download :).
 
-Welcome to **MR-SNACK0MAT **! This guide will help you set up and run the project locally. Follow the instructions below to get started.
+
+Welcome to MR-SNACK0MAT! This guide will help you set up and run the project locally. Follow the instructions below to get started.
 
 ## Table of Contents
 
