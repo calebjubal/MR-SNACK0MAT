@@ -1,5 +1,7 @@
 # MR-SNACK0MAT 
 
+## This is one of my first projects made using php when i started web developement. Feel free to download :)
+
 Welcome to **MR-SNACK0MAT **! This guide will help you set up and run the project locally. Follow the instructions below to get started.
 
 ## Table of Contents
@@ -47,3 +49,11 @@ You can use PHP’s built-in server to run the project without needing to instal
     ```
     http://localhost:8000
     ```
+
+## Contributing
+I welcome contributions! If you want to dip your feet into other peoples code and contribute to this project, please follow these steps:
+
+Fork the repository.
+Create a new branch for your feature or bugfix.
+Commit your changes and push your branch.
+Submit a Pull Request for review.
