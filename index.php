@@ -18,9 +18,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["addtobasket"])) {
     $activePrice = $_POST["value"];
     $_SESSION["price"][] = $activePrice;
     $_SESSION["basket"][] = $activeItem;
-/*     var_dump($_SESSION["basket"]);
-    ?> <hr> <?php
-    var_dump($_SESSION["price"]);  !!!TA BORT SEN!!! */
     ?>
     <div class="selectedItems">
         <h3>This is your basket:</h3>
